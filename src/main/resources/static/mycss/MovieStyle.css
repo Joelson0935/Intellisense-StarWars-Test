@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body {
+	background-color: #808000;
+}
+
+#principal {
+	text-align: center;
+	font-size: 50px;
+	margin-top: 3%;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.texto {
+	text-align: center;
+	font-size: 50px;
+	margin-top: 3%;
+	width: 100%;
+	
+}
+
+#conteudo {
+	width: 60%;
+	height: 500px;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	overflow: scroll;
+	background-color: white;
+}
+
+.Answer1 {
+	
+	width: 100%;
+	margin-top: 5%;
+	font-size: 20px;
+}
+

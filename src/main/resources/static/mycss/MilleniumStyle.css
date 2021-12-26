@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.texto {
+	text-align: center;
+	font-size: 50px;
+	margin-top: 3%;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	
+}
+
+#Answer1 {
+	background-color: gray; 
+	width: 60%;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 20px;
+	overflow: scroll;
+}
+#Answer2 {
+	background-color: gray; 
+	width: 60%;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 20px;
+	overflow: scroll;
+}
+#Answer3 {
+	background-color: gray; 
+	width: 60%;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 20px;
+	overflow: scroll;
+}
+#Answer4 {
+	background-color: gray; 
+	width: 60%;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 20px;
+	overflow: scroll;
+}

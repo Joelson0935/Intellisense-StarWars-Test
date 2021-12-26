@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/localization/messages_pt_BR.js"></script>
+<script type="text/javascript" src="js/additional-methods.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="mycss/MilleniumStyle.css">
+<title>MilleniumFalcon</title>
+</head>
+<body>
+	<!-- http://localhost:8080/FindResources/MilleniumFalcon.html -->
+	<div class="texto">
+		<h1>This is one of Millenium Falcon`s pilot</h1>
+		<button type="button" class="btn btn-primary" style="float: right;"
+			onclick="getObject()">GET_PILOT</button>
+	</div>
+	<div style="margin-left: 20%; font-size: 20px; width: 60%; margin-top: 5%;">
+	<p>They are the four pilots who piloted the Millenium Falcon in the StarWars`s movies</p>
+	</div>
+	
+	<div id="conteudo">
+		<table id="Answer1">
+			<thead>
+
+			</thead>
+		</table>
+
+		<div class="texto">
+			<h1>This is one of Millenium Falcon`s pilot</h1>
+			<button type="button" class="btn btn-primary" style="float: right;"
+				onclick="getObject1()">GET_PILOT</button>
+		</div>
+
+		<table id="Answer2">
+			<thead>
+
+			</thead>
+		</table>
+		<div class="texto">
+			<h1>This is one of Millenium Falcon`s pilot</h1>
+			<button type="button" class="btn btn-primary" style="float: right;"
+				onclick="getObject2()">GET_PILOT</button>
+		</div>
+
+		<table id="Answer3">
+			<thead>
+
+			</thead>
+		</table>
+		<div class="texto">
+			<h1>This is one of Millenium Falcon`s pilot</h1>
+			<button type="button" class="btn btn-primary" style="float: right;"
+				onclick="getObject3()">GET_PILOT</button>
+		</div>
+
+		<table id="Answer4">
+			<thead>
+
+			</thead>
+		</table>
+	</div>
+	<script type="text/javascript">
+		function getObject() {
+
+			$
+					.ajax(
+							{
+								method : "GET",
+								url : "/FindResources/Way/Take",
+								success : function(response) {
+									console.log(response);
+									$('#Answer1 > thead')
+											.append(
+													'<tr><th>Name:</th><td>'
+															+ response.name
+															+ '</td></tr><tr><th>Height:</ht><td>'
+															+ response.height
+															+ '</td></tr><tr><th>Mass:</th><td>'
+															+ response.mass
+															+ '</td></tr><tr><th>Hair_Color:</th><td>'
+															+ response.hair_color
+															+ '</td></tr><tr><th>Skin_Color:</th><td>'
+															+ response.skin_color
+															+ '</td></tr><tr><th>Eye_Color:</th><td>'
+															+ response.eye_color
+															+ '</td></tr><tr><th>Birth_Year</th><td>'
+															+ response.birth_year
+															+ '</td></tr><tr><th>Gender:</th><td>'
+															+ response.gender
+															+ '</td></tr><tr><th>HomeWorld:</th><td>'
+															+ response.homeworld
+															+ '</td></tr><tr><th>Created:</th><td>'
+															+ response.created
+															+ '</td></tr><tr><th>Edited:</th><td>'
+															+ response.edited
+															+ '</td></tr><tr><th>Url:</th><td>'
+															+ response.url
+															+ '</td></tr>')
+								}
+							}).fail(function(xhr, status, errorThrown) {
+						alert("Erro: " + xhr.responseText);
+					});
+		}
+
+		function getObject1() {
+			$
+					.ajax(
+							{
+								method : "GET",
+								url : "/FindResources/Way/Take1",
+								success : function(response) {
+									console.log(response);
+									$('#Answer2 > thead')
+											.append(
+													'<tr><th>Name:</th><td>'
+															+ response.name
+															+ '</td></tr><tr><th>Height:</ht><td>'
+															+ response.height
+															+ '</td></tr><tr><th>Mass:</th><td>'
+															+ response.mass
+															+ '</td></tr><tr><th>Hair_Color:</th><td>'
+															+ response.hair_color
+															+ '</td></tr><tr><th>Skin_Color:</th><td>'
+															+ response.skin_color
+															+ '</td></tr><tr><th>Eye_Color:</th><td>'
+															+ response.eye_color
+															+ '</td></tr><tr><th>Birth_Year</th><td>'
+															+ response.birth_year
+															+ '</td></tr><tr><th>Gender:</th><td>'
+															+ response.gender
+															+ '</td></tr><tr><th>HomeWorld:</th><td>'
+															+ response.homeworld
+															+ '</td></tr><tr><th>Created:</th><td>'
+															+ response.created
+															+ '</td></tr><tr><th>Edited:</th><td>'
+															+ response.edited
+															+ '</td></tr><tr><th>Url:</th><td>'
+															+ response.url
+															+ '</td></tr>')
+								}
+							}).fail(function(xhr, status, errorThrown) {
+						alert("Erro: " + xhr.responseText);
+					});
+		}
+		function getObject2() {
+			$
+					.ajax(
+							{
+								method : "GET",
+								url : "/FindResources/Way/Take2",
+								success : function(response) {
+									console.log(response);
+									$('#Answer3 > thead')
+											.append(
+													'<tr><th>Name:</th><td>'
+															+ response.name
+															+ '</td></tr><tr><th>Height:</ht><td>'
+															+ response.height
+															+ '</td></tr><tr><th>Mass:</th><td>'
+															+ response.mass
+															+ '</td></tr><tr><th>Hair_Color:</th><td>'
+															+ response.hair_color
+															+ '</td></tr><tr><th>Skin_Color:</th><td>'
+															+ response.skin_color
+															+ '</td></tr><tr><th>Eye_Color:</th><td>'
+															+ response.eye_color
+															+ '</td></tr><tr><th>Birth_Year</th><td>'
+															+ response.birth_year
+															+ '</td></tr><tr><th>Gender:</th><td>'
+															+ response.gender
+															+ '</td></tr><tr><th>HomeWorld:</th><td>'
+															+ response.homeworld
+															+ '</td></tr><tr><th>Created:</th><td>'
+															+ response.created
+															+ '</td></tr><tr><th>Edited:</th><td>'
+															+ response.edited
+															+ '</td></tr><tr><th>Url:</th><td>'
+															+ response.url
+															+ '</td></tr>')
+								}
+							}).fail(function(xhr, status, errorThrown) {
+						alert("Erro: " + xhr.responseText);
+					});
+		}
+		function getObject3() {
+			$
+					.ajax(
+							{
+								method : "GET",
+								url : "/FindResources/Way/Take3",
+								success : function(response) {
+									console.log(response);
+									$('#Answer4 > thead')
+											.append(
+													'<tr><th>Name:</th><td>'
+															+ response.name
+															+ '</td></tr><tr><th>Height:</ht><td>'
+															+ response.height
+															+ '</td></tr><tr><th>Mass:</th><td>'
+															+ response.mass
+															+ '</td></tr><tr><th>Hair_Color:</th><td>'
+															+ response.hair_color
+															+ '</td></tr><tr><th>Skin_Color:</th><td>'
+															+ response.skin_color
+															+ '</td></tr><tr><th>Eye_Color:</th><td>'
+															+ response.eye_color
+															+ '</td></tr><tr><th>Birth_Year</th><td>'
+															+ response.birth_year
+															+ '</td></tr><tr><th>Gender:</th><td>'
+															+ response.gender
+															+ '</td></tr><tr><th>HomeWorld:</th><td>'
+															+ response.homeworld
+															+ '</td></tr><tr><th>Created:</th><td>'
+															+ response.created
+															+ '</td></tr><tr><th>Edited:</th><td>'
+															+ response.edited
+															+ '</td></tr><tr><th>Url:</th><td>'
+															+ response.url
+															+ '</td></tr>')
+								}
+							}).fail(function(xhr, status, errorThrown) {
+						alert("Erro: " + xhr.responseText);
+					});
+		}
+	</script>
+
+</body>
+</html>
